@@ -9,7 +9,9 @@ const cookieOptions = {
   httpOnly: true,
   secure: isProduction,
   sameSite: isProduction ? "none" : "lax",
+  //sameSite : "lax",
   domain: isProduction ? ".yourdomain.com" : "localhost",
+  //domain : "localhost",
   maxAge: 7 * 24 * 60 * 60 * 1000,
 };
 
